@@ -13,6 +13,7 @@ import Coordinators from './components/Coordinators';
 import Registration from './components/Registration';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
+import CursorGlow from './components/CursorGlow';
 
 /* ── Inner app (can access theme context) ── */
 function AppInner() {
@@ -34,6 +35,7 @@ function AppInner() {
 
   return (
     <>
+      <CursorGlow />
       {/* Cinematic loader */}
       {!loaded && <PageLoader onComplete={() => setLoaded(true)} />}
 

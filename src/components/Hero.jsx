@@ -3,8 +3,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 
 
-/* ── Magnetic Button ── */
-export const MagneticButton = ({ children, className, style, href, onClick }) => {
+export const MagneticButton = ({ children, className, style, href, onClick, ...rest }) => {
   const ref = useRef(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -32,6 +31,7 @@ export const MagneticButton = ({ children, className, style, href, onClick }) =>
       style={{ ...style, x: sx, y: sy }}
       className={className}
       whileTap={{ scale: 0.94 }}
+      {...rest}
     >
       {children}
     </motion.a>
@@ -294,7 +294,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.35 }}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
-          <MagneticButton href="#register" className="btn-violet text-base px-9 py-4 rounded-2xl inline-block tracking-wide"
+          <MagneticButton href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" className="btn-violet text-base px-9 py-4 rounded-2xl inline-block tracking-wide"
             style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700 }}>
             ✦ Register Now
           </MagneticButton>

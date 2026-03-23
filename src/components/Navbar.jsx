@@ -93,7 +93,7 @@ const Navbar = () => {
         {/* CTA (Right) */}
         <div className="hidden md:flex items-center gap-3">
           <Magnetic strength={0.3}>
-            <a href="#register" className="btn-violet text-[11px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full inline-block"
+            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" className="btn-violet text-[11px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full inline-block"
               style={{ fontFamily: 'Orbitron, sans-serif' }}>
               Join Spandan
             </a>
@@ -119,7 +119,7 @@ const Navbar = () => {
                   {l.name}
                 </a>
               ))}
-              <a href="#register" onClick={() => setIsOpen(false)}
+              <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}
                 className="btn-violet text-sm px-5 py-2.5 rounded-xl text-center mt-2 inline-block">
                 Register Now
               </a>

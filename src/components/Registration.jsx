@@ -32,7 +32,7 @@ const Registration = () => {
           >
             <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
             
-            <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer"
+            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer"
                className="relative px-12 py-6 bg-black rounded-full flex items-center gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(16,185,129,0.3)]">
               <span className="text-xl font-black uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                 Register Now
