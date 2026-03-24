@@ -153,6 +153,32 @@
   }
   .btn-violet:hover::after { opacity: 1; }
   .btn-violet:hover { transform: translateY(-2px); box-shadow: 0 10px 36px var(--c-glow); }
+  
+  .btn-red {
+    background: linear-gradient(135deg, #FF3131, #FF5E3A);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border: none;
+    box-shadow: 0 4px 22px rgba(255, 49, 49, 0.3);
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-red::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .btn-red:hover::after { opacity: 1; }
+  .btn-red:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 36px rgba(255, 49, 49, 0.5); 
+    filter: brightness(1.1);
+  }
 
   .btn-outline {
     background: transparent;

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Magnetic = ({ children, strength = 0.3 }) => {
@@ -93,10 +93,18 @@ const Navbar = () => {
         {/* CTA (Right) */}
         <div className="hidden md:flex items-center gap-3">
           <Magnetic strength={0.3}>
-            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" className="btn-violet text-[11px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full inline-block"
-              style={{ fontFamily: 'Orbitron, sans-serif' }}>
-              Join Spandan
-            </a>
+            <div className="relative p-[2px] rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 transition-transform hover:scale-105">
+              <div className="absolute inset-0 rounded-full blur-md opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
+              
+              <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer" 
+                 className="relative px-6 py-2 bg-black rounded-full flex items-center gap-2 transition-all hover:bg-black/90 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                <span className="text-sm">🍜</span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  Food coupon registration
+                </span>
+                <ArrowRight className="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
           </Magnetic>
         </div>
 
@@ -119,10 +127,17 @@ const Navbar = () => {
                   {l.name}
                 </a>
               ))}
-              <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}
-                className="btn-violet text-sm px-5 py-2.5 rounded-xl text-center mt-2 inline-block">
-                Register Now
-              </a>
+              <div className="relative p-[2px] rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 mt-2">
+                <div className="absolute inset-0 rounded-full blur-md opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
+                <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}
+                  className="relative px-5 py-2.5 bg-black rounded-full flex items-center justify-center gap-2 transition-all hover:bg-black/90">
+                  <span className="text-base">🍜</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                    Food coupon registration
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

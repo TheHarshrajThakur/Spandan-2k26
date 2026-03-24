@@ -22,7 +22,7 @@ const Registration = () => {
           <p className="text-sm font-bold tracking-[0.3em] uppercase opacity-50" style={{ color: 'var(--c-text-muted)' }}>Join MIT's biggest cultural celebration</p>
         </motion.div>
 
-        <div className="flex justify-center">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -33,11 +33,30 @@ const Registration = () => {
             <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
             
             <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer"
-               className="relative px-12 py-6 bg-black rounded-full flex items-center gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(16,185,129,0.3)]">
-              <span className="text-xl font-black uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+               className="relative px-8 sm:px-12 py-4 sm:py-6 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] w-full">
+              <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                 Register Now
               </span>
-              <ArrowRight className="w-6 h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+            className="relative p-1 rounded-full group bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500"
+          >
+            <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500" />
+            
+            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer"
+               className="relative px-8 sm:px-12 py-4 sm:py-6 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(139,92,246,0.3)] w-full">
+              <span className="text-xl sm:text-2xl">🍜</span>
+              <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                Food Coupons
+              </span>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
             </a>
           </motion.div>
         </div>
