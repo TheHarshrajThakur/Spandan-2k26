@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="h-px mb-6" style={{ background: `linear-gradient(90deg, transparent, var(--c-border), transparent)` }} />
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 mt-4 relative z-10">
-          <p className="text-center md:text-left text-xs order-2 md:order-1" style={{ color: 'var(--c-text-faint)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
+          <p className="text-center md:text-left text-xs order-2 md:order-1 font-medium opacity-80" style={{ color: '#ffffff', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
             © 2026 Malwa Institute of Technology · SPANDAN-2K26 · All rights reserved.
           </p>
 

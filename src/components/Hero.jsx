@@ -175,7 +175,7 @@ const Hero = () => {
               <img
                 src="/altius-logo.png" alt="Altius"
                 style={{
-                  height: 80, filter: isDark
+                  height: 60, filter: isDark
                     ? 'drop-shadow(0 0 20px rgba(0,210,255,0.6)) drop-shadow(0 0 40px rgba(58,242,255,0.3))'
                     : 'drop-shadow(0 2px 8px rgba(0,146,177,0.35))'
                 }}
@@ -286,12 +286,12 @@ const Hero = () => {
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
-          className="font-semibold uppercase tracking-[0.3em] mb-4"
+          className="font-black uppercase tracking-[0.4em] mb-4 opacity-80"
           style={{
-            color: 'var(--c-accent3)',
-            fontSize: 'clamp(0.8rem, 1.5vw, 1.1rem)',
+            color: '#ffffff',
+            fontSize: 'clamp(0.7rem, 1.5vw, 0.9rem)',
             fontFamily: 'Orbitron, sans-serif',
-            textShadow: isDark ? '0 0 15px rgba(58,242,255,0.3)' : 'none',
+            textShadow: isDark ? '0 0 15px rgba(255,255,255,0.3)' : 'none',
           }}
         >
           30 March 2026 · MIT Campus · Indore

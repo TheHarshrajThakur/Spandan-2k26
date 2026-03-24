@@ -39,10 +39,20 @@ const Registration = () => {
                 For Participants
               </span> */}
 
-              <span
-                className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap"
-                style={{ fontFamily: 'Orbitron, sans-serif' }}
-              > For Participants</span>
+              <div className="flex flex-col items-center justify-center">
+                <span
+                  className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap"
+                  style={{ fontFamily: 'Orbitron, sans-serif' }}
+                >
+                  For Participants
+                </span>
+                <span
+                  className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] text-white/70 whitespace-nowrap mt-1"
+                  style={{ fontFamily: 'Orbitron, sans-serif' }}
+                >
+                  (Registration)
+                </span>
+              </div>
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
             </a>
           </motion.div>
