@@ -6,7 +6,7 @@ const schedule = [
   { time: '---', title: 'The Grand Mic: Singing Competition 🎤', color: '#8A2BE2', glow: 'rgba(138,43,226,0.5)' },
   { time: '---', title: 'Step Up: Dance Battle 💃', color: '#FF2E97', glow: 'rgba(255,46,151,0.5)' },
   { time: '---', title: 'Vogue night: The Mega Fashion Show 👠', color: '#3AF2FF', glow: 'rgba(58,242,255,0.5)' },
-  { time: '---', title: ' Prize Distribution 🏆', color: '#F59E0B', glow: 'rgba(245,158,11,0.5)' },
+  // { time: '---', title: ' Prize Distribution 🏆', color: '#F59E0B', glow: 'rgba(245,158,11,0.5)' },
 ];
 
 const SectionReveal = ({ children, delay = 0 }) => (
