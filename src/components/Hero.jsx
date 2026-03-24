@@ -296,7 +296,7 @@ const Hero = () => {
         >
           <MagneticButton href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer" className="btn-violet text-base px-9 py-4 rounded-2xl inline-block tracking-wide"
             style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700 }}>
-            ✦ Register Now
+            ✦ For Participants
           </MagneticButton>
           <MagneticButton href="#events" className="btn-outline text-base px-9 py-4 rounded-2xl inline-block tracking-wide"
             style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 600 }}>

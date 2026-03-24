@@ -81,7 +81,7 @@ const Navbar = () => {
               >
                 {link.name}
                 <span className="absolute bottom-[-6px] left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
-                  style={{ 
+                  style={{
                     background: 'linear-gradient(90deg, var(--c-accent), var(--c-accent2))',
                     boxShadow: '0 0 10px var(--c-glow)'
                   }} />
@@ -95,12 +95,12 @@ const Navbar = () => {
           <Magnetic strength={0.3}>
             <div className="relative p-[2px] rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 transition-transform hover:scale-105">
               <div className="absolute inset-0 rounded-full blur-md opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
-              
-              <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer" 
-                 className="relative px-6 py-2 bg-black rounded-full flex items-center gap-2 transition-all hover:bg-black/90 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-                <span className="text-sm">🍜</span>
+
+              <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer"
+                className="relative px-6 py-2 bg-black rounded-full flex items-center gap-2 transition-all hover:bg-black/90 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                <span className="text-sm"></span>
                 <span className="text-[11px] font-bold uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-                  Food coupon registration
+                  Event Attendee
                 </span>
                 <ArrowRight className="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -131,9 +131,9 @@ const Navbar = () => {
                 <div className="absolute inset-0 rounded-full blur-md opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
                 <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}
                   className="relative px-5 py-2.5 bg-black rounded-full flex items-center justify-center gap-2 transition-all hover:bg-black/90">
-                  <span className="text-base">🍜</span>
+                  <span className="text-base"></span>
                   <span className="text-xs font-bold uppercase tracking-widest text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-                    Food coupon registration
+                    Event Attendee
                   </span>
                   <ArrowRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-1 transition-transform" />
                 </a>
