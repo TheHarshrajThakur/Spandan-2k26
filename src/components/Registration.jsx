@@ -78,7 +78,7 @@ const Registration = () => {
           </motion.div>
         </div>
 
-        <p className="mt-12 text-[10px] font-black uppercase tracking-[0.4em] opacity-30" style={{ color: 'var(--c-text-faint)' }}>
+        <p className="mt-12 text-[10px] sm:text-xs font-black uppercase tracking-[0.4em] opacity-80" style={{ color: '#ffffff' }}>
           30 March 2026 · MIT Campus · Indore
         </p>
       </div>
