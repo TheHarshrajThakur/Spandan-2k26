@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -54,10 +54,12 @@ const Registration = () => {
               className="relative px-8 sm:px-12 py-4 sm:py-6 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(139,92,246,0.3)] w-full">
               <span className="text-xl sm:text-2xl"></span>
               <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-                Event Attendee
+                Event Attendee (Non Participants)
               </span>
+
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
             </a>
+
           </motion.div>
         </div>
 
@@ -65,7 +67,7 @@ const Registration = () => {
           30 March 2026 · MIT Campus · Indore
         </p>
       </div>
-    </section>
+    </section >
   );
 };
 

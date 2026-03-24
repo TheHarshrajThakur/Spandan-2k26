@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
 
         {/* CTA (Right) */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* <div className="hidden md:flex items-center gap-3">
           <Magnetic strength={0.3}>
             <div className="relative p-[2px] rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 transition-transform hover:scale-105">
               <div className="absolute inset-0 rounded-full blur-md opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
@@ -106,7 +106,7 @@ const Navbar = () => {
               </a>
             </div>
           </Magnetic>
-        </div>
+        </div> */}
 
         <button className="md:hidden p-1 transition-colors"
           style={{ color: 'var(--c-text-muted)' }}

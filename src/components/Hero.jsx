@@ -290,7 +290,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Magnetic CTA Buttons */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.35 }}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
@@ -302,7 +302,7 @@ const Hero = () => {
             style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 600 }}>
             Explore Events →
           </MagneticButton>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Bottom fade */}
