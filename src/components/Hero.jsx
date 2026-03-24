@@ -123,43 +123,85 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
-        {/* MIT Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, y: -20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="flex justify-center mb-6"
-        >
-          <img
-            src="/mit-logo.svg" alt="MIT"
-            style={{
-              height: 96, filter: isDark
-                ? 'drop-shadow(0 0 20px rgba(138,43,226,0.6)) drop-shadow(0 0 40px rgba(255,46,151,0.3))'
-                : 'drop-shadow(0 2px 8px rgba(124,58,237,0.35))'
-            }}
-          />
-        </motion.div>
+        {/* College Branding Container */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 mb-12">
+          
+          {/* MIT Branding */}
+          <div className="flex flex-col items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-4"
+            >
+              <img
+                src="/mit-logo.svg" alt="MIT"
+                style={{
+                  height: 80, filter: isDark
+                    ? 'drop-shadow(0 0 20px rgba(138,43,226,0.6)) drop-shadow(0 0 40px rgba(255,46,151,0.3))'
+                    : 'drop-shadow(0 2px 8px rgba(124,58,237,0.35))'
+                }}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <h2
+                className="font-heading font-bold"
+                style={{
+                  fontSize: 'clamp(1rem, 3vw, 1.8rem)',
+                  letterSpacing: '0.06em', textTransform: 'uppercase',
+                  color: 'var(--c-text)',
+                  textShadow: isDark ? '0 0 30px rgba(138,43,226,0.4)' : 'none',
+                }}
+              >
+                Malwa Institute of Technology
+              </h2>
+              <p style={{ color: 'var(--c-text-faint)', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginTop: 4 }}>
+                Indore, M.P. · Est. 2004
+              </p>
+            </motion.div>
+          </div>
 
-        {/* College name */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }} className="mb-6"
-        >
-          <h2
-            className="font-heading font-bold"
-            style={{
-              fontSize: 'clamp(1.3rem, 4vw, 2.6rem)',
-              letterSpacing: '0.06em', textTransform: 'uppercase',
-              color: 'var(--c-text)',
-              textShadow: isDark ? '0 0 30px rgba(138,43,226,0.4)' : 'none',
-            }}
-          >
-            Malwa Institute of Technology
-          </h2>
-          <p style={{ color: 'var(--c-text-faint)', fontSize: '0.7rem', letterSpacing: '0.22em', textTransform: 'uppercase', marginTop: 4 }}>
-            Indore, M.P. · Est. 2004
-          </p>
-        </motion.div>
+          {/* Altius Branding */}
+          <div className="flex flex-col items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-4"
+            >
+              <img
+                src="/altius-logo.png" alt="Altius"
+                style={{
+                  height: 80, filter: isDark
+                    ? 'drop-shadow(0 0 20px rgba(0,210,255,0.6)) drop-shadow(0 0 40px rgba(58,242,255,0.3))'
+                    : 'drop-shadow(0 2px 8px rgba(0,146,177,0.35))'
+                }}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <h2
+                className="font-heading font-bold"
+                style={{
+                  fontSize: 'clamp(1rem, 3vw, 1.8rem)',
+                  letterSpacing: '0.06em', textTransform: 'uppercase',
+                  color: 'var(--c-text)',
+                  textShadow: isDark ? '0 0 30px rgba(0,210,255,0.4)' : 'none',
+                }}
+              >
+                Altius Institute of Universal Studies
+              </h2>
+              <p style={{ color: 'var(--c-text-faint)', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginTop: 4 }}>
+                Indore, M.P. · Songs of Knowledge
+              </p>
+            </motion.div>
+          </div>
+        </div>
 
         {/* Gradient divider */}
         <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.5 }}
