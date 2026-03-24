@@ -108,6 +108,7 @@ const Hero = () => {
             background: `radial-gradient(ellipse, var(--c-blob1) 0%, transparent 65%)`,
             filter: 'blur(70px)',
             position: 'absolute',
+            willChange: 'transform',
           }}
         />
         <motion.div
@@ -117,6 +118,7 @@ const Hero = () => {
             background: `radial-gradient(ellipse, var(--c-blob2) 0%, transparent 65%)`,
             filter: 'blur(70px)',
             position: 'absolute',
+            willChange: 'transform',
           }}
         />
       </div>
@@ -209,7 +211,7 @@ const Hero = () => {
           style={{ background: `linear-gradient(90deg, transparent, var(--c-accent), var(--c-accent3), transparent)` }} />
 
         {/* Holi Sprinkles / Splashes behind title */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" style={{ perspective: 1000 }}>
           {[
             { color: '#FF2E97', top: '35%', left: '30%', size: '300px', delay: '0s' },
             { color: '#00D2FF', top: '45%', right: '25%', size: '350px', delay: '1.5s' },
@@ -238,6 +240,8 @@ const Hero = () => {
                 top: s.top, left: s.left, right: s.right, bottom: s.bottom,
                 width: s.size, height: s.size,
                 background: `radial-gradient(circle, ${s.color} 0%, transparent 70%)`,
+                willChange: 'transform, opacity',
+                backfaceVisibility: 'hidden',
               }}
             />
           ))}
@@ -259,6 +263,8 @@ const Hero = () => {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
           }}
           className="font-black leading-tight mb-4 tracking-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]"
         >

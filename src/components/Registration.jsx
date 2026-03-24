@@ -29,6 +29,7 @@ const Registration = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             className="relative p-1 rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500"
+            style={{ willChange: 'transform' }}
           >
             <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
 
@@ -53,6 +54,7 @@ const Registration = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             className="relative p-1 rounded-full group bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500"
+            style={{ willChange: 'transform' }}
           >
             <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500" />
 
