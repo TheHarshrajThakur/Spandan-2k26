@@ -50,18 +50,9 @@ const Navbar = () => {
 
         {/* Logo + Name */}
         <Magnetic strength={0.25}>
-          <a href="#home" className="flex items-center gap-3 group" style={{ textDecoration: 'none' }}>
-            <img
-              src="/mit-logo.svg" alt="MIT"
-              className="h-9 w-auto transition-all duration-300 group-hover:scale-105"
-              style={{
-                filter: isDark
-                  ? 'drop-shadow(0 0 6px rgba(138,43,226,0.5))'
-                  : 'drop-shadow(0 2px 4px rgba(124,58,237,0.3))'
-              }}
-            />
+          <a href="#home" className="flex items-center group" style={{ textDecoration: 'none' }}>
             <div className="flex items-center">
-              <span className="font-heading font-bold text-base"
+              <span className="font-heading font-bold text-lg md:text-xl"
                 style={{ color: 'var(--c-text)', letterSpacing: '0.05em' }}>
                 SPANDAN<span className="grad-text-violet" style={{ marginLeft: 2 }}> 2K26</span>
               </span>

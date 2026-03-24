@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="grad-text-violet"> 2K26</span>
             </h2>
             <p className="text-sm md:text-base leading-relaxed opacity-60" style={{ color: 'var(--c-text-muted)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-              Malwa Institute of Technology's premier annual fest.
+              Malwa Institute of Technology's and Altius Institute of Universal Studies'  premier annual fest.
               <br />
               Celebrating culture, technology, and talent on March 30, 2026.
             </p>
