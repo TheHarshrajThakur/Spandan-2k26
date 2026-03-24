@@ -34,9 +34,15 @@ const Registration = () => {
 
             <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer"
               className="relative px-8 sm:px-12 py-4 sm:py-6 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] w-full">
-              <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+
+              {/* <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                 For Participants
-              </span>
+              </span> */}
+
+              <span
+                className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap"
+                style={{ fontFamily: 'Orbitron, sans-serif' }}
+              > For Participants</span>
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
             </a>
           </motion.div>
@@ -52,11 +58,20 @@ const Registration = () => {
 
             <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer"
               className="relative px-8 sm:px-12 py-4 sm:py-6 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(139,92,246,0.3)] w-full">
-              <span className="text-xl sm:text-2xl"></span>
-              <span className="text-base sm:text-xl font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-                Event Attendee (Non Participants)
-              </span>
-
+              <div className="flex flex-col items-center justify-center">
+                <span
+                  className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap"
+                  style={{ fontFamily: 'Orbitron, sans-serif' }}
+                >
+                  Event Attendee
+                </span>
+                <span
+                  className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] text-white/70 whitespace-nowrap mt-1"
+                  style={{ fontFamily: 'Orbitron, sans-serif' }}
+                >
+                  (Non Participants)
+                </span>
+              </div>
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
             </a>
 
