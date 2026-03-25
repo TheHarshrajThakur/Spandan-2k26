@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
+import { ArrowRight } from 'lucide-react';
 
 
 export const MagneticButton = ({ children, className, style, href, onClick, ...rest }) => {
@@ -202,6 +203,52 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* Action Buttons below college names */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mb-12"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="relative p-1 rounded-full group bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500"
+          >
+            <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500" />
+            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/NewYearPartyRSVPForm/formperma/zMwH68y4ixU5YMt_eONXjBRCrRWSPHwHmphb7qUxX8E" target="_blank" rel="noopener noreferrer"
+              className="relative px-8 sm:px-12 py-3 sm:py-4 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] w-full">
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  For Participants
+                </span>
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] text-white/70 whitespace-nowrap mt-1" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  (Registration)
+                </span>
+              </div>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
+            </a>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="relative p-1 rounded-full group bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500"
+          >
+            <div className="absolute inset-0 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-violet-500 via-cyan-500 to-emerald-500" />
+            <a href="https://forms.zohopublic.in/lakshya2025miti1/form/MealOrderForm/formperma/ps44SJ3WjU0EIdxob_NfYp9OSYl2T5-Podhsg0opF7U" target="_blank" rel="noopener noreferrer"
+              className="relative px-8 sm:px-12 py-3 sm:py-4 bg-black rounded-full flex items-center justify-center gap-3 sm:gap-4 transition-all hover:bg-black/90 group-hover:shadow-[0_0_50px_rgba(139,92,246,0.3)] w-full">
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-xs sm:text-sm font-black uppercase tracking-widest text-white whitespace-nowrap" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  Event Attendee
+                </span>
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] text-white/70 whitespace-nowrap mt-1" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  (Non Participants)
+                </span>
+              </div>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 group-hover:translate-x-2 transition-transform" />
+            </a>
+          </motion.div>
+        </motion.div>
 
         {/* Gradient divider */}
         <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.5 }}
